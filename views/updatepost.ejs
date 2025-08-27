@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/main.css" />
+
+    <title>Blog</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- <div class="create"><p class="post">+</p></div> -->
+
+      <main>
+        <%- include("partials/header.ejs") %>
+        <form class="update-form" action="/post/<%= post.id %>" method="POST">
+          <label>Name</label>
+          <input type="text" name="name" value="<%= post.name %>" />
+
+          <label>Bio</label>
+          <input type="text" name="bio" value="<%= post.bio %>" />
+
+          <label>Content</label>
+          <textarea name="content"><%= post.content %></textarea>
+
+          <label>Photo URL</label>
+          <input type="text" name="photo" value="<%= post.photo %>" />
+
+          <button type="submit">Update Post</button>
+        </form>
+        <%- include("partials/footer.ejs") %>
+      </main>
+
+      <%- include("partials/footer.ejs") %>
+    </div>
+  </body>
+</html>
