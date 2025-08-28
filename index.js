@@ -29,14 +29,14 @@ let posts = [
     name: "First Post",
     bio: "Short bio here",
     content: "Full content goes here",
-    photo: "img1.jpg",
+    photo: "/images/MMA-logo-web.png",
   },
   {
     id: 2,
     name: "Second Post",
     bio: "Another bio",
     content: "More content here",
-    photo: "img2.jpg",
+    photo: "/images/MMA-logo-web.png",
   },
 ];
 
