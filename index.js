@@ -116,6 +116,4 @@ app.post("/post/:id/delete", (req, res) => {
   res.redirect("/blog");
 });
 
-app.listen(port, () => {
-  console.log(`Listening on port ${port}`);
-});
+module.exports = app;
